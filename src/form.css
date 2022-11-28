@@ -1,0 +1,115 @@
+.fullcontainer{
+    width:100%;
+    height:100vh;
+    border:1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+  width:fit-content;
+  height:fit-content;
+  border:none;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px  grey;
+  display: flex;
+  flex-direction: column;
+  
+}
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  align-items: start;
+}
+.heading{
+  
+  /* height:100px; */
+  /* margin:0px auto; */
+  
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border-bottom:0.5px solid grey; */
+  /* padding-left: 20px; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+.user_info{
+  width:fit-content;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 20px; */
+  gap:10px;
+  /* border:1px solid black; */
+}
+.user_info label{
+  font-size: 16px;
+}
+
+.user_info input{
+  height: 45px;
+  width: 240px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  color: grey;
+  font-size: 13px;
+}
+input[type="email"]:focus,
+input[type="text"]:focus{
+    border:1px solid grey ;
+    border-bottom-width: 2px ;  
+}
+.button{
+  width:fit-content;
+  /* height:100px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* justify-content: flex-end; */
+  /* padding-left: 230px; */
+}
+ .button button{
+  /* width:60px; */
+  /* height:35px; */
+  border:1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+  background-color:#8da8c7;
+  cursor:pointer;
+  color:white;
+  font-size:16px;
+  font-weight:400;
+  transition: all 200ms ease;
+  padding:10px 30px;
+  
+}
+ .button button:hover{
+  background-color: white;
+  border:1px solid #8da8c7;
+  color:#8da8c7;
+}
+.user_info h1
+{
+  color:red;
+  font-size: 12px;
+  font-weight: 500;
+}
+.user_info div{
+  gap:10px;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+}
