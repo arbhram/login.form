@@ -12,7 +12,7 @@ const Schema=yup.object().shape({
 })
 function Loginform(){
     const Submit = (value) => {
-        // alert('ok');
+        alert('ok');
         console.log(value)
         }
     return(
@@ -33,20 +33,20 @@ function Loginform(){
             >
                 {({handleSubmit})=>{
                      return <Form onSubmit={handleSubmit}>
-                        <div className="w-screen h-screen flex  items-center justify-center">
-            <div className="w-10/12 h-6/7 grid grid-cols-7     shadow-[0_35px_60px_-15px_rgba(128,128,128)] bg-gray-100 rounded-lg">
-                        <div className="col-span-3   flex flex-col justify-center items-center p-0">
+                        <div className="w-screen h-full flex  items-center justify-center">
+            <div className="w-10/12 h-full grid-cols-1 md:grid-cols-7  shadow-[0_35px_60px_-15px_rgba(128,128,128)] bg-gray-100 rounded-lg">
+                        <div className="col-span-3 flex flex-col justify-center items-center p-0">
                             <img src={image} className='h-full w-full rounded-lg' />
                         </div>
                         <div className="col-span-4 p-5 ">
                          <div className=" h-10 text-3xl font-medium flex align-center border border-transparent">
-                            <h1>Registration Form</h1>
+                            <h1 className="lg:bg-blue-300 md:bg-yellow-300 xl:bg-red-600">Registration Form</h1>
                         </div>
                     <div>
-                        <div className="grid grid-cols-2  gap-5 text-s font-small mt-10 font-sans "  >
+                        <div className="grid grid-cols-1 lg:grid-cols-2   gap-5 text-sm font-small font-sans "  >
                      <div className="flex flex-col gap-2">
                          <label htmlFor="First Name">First Name : </label>
-                         <Field type='text' className='border border-transparents  text-s rounded-md p-1 ' name='firstName' id='firstName'/>
+                         <Field type='text' className='border border-transparents  text-sm rounded-md p-1 ' name='firstName' id='firstName'/>
                          <ErrorMessage className="text-xs text-red-700" name="firstName" component={'div'}/>    
                      </div>
                      <div className="flex flex-col gap-1">
@@ -66,7 +66,7 @@ function Loginform(){
                      </div>
                      <div className="flex flex-col gap-1" >
                         <label>Gender</label>
-                        <Field as='Select' className='border-b border-transparents p-2 rounded-md  text-black' >
+                        <Field as='select' className='border-b border-transparents p-2 rounded-md  text-black' >
                             <option>Select Gender</option>
                             <option value={'male'}>Male</option>
                             <option value={'female'}>Female</option>
@@ -103,10 +103,7 @@ function Loginform(){
                      </div>
                  </Form>
                 }}
-            </Formik>
-            
-       
+            </Formik>   
     )
-
 }
 export default Loginform;
